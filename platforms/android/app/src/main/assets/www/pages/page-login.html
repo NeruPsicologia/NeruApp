@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="../css/login.css"/>
+    </head>
+    <body>
+
+        <div data-role="page" id="page-login">
+            <div data-role="main" class="ui-content">
+                <div id="div_neru">
+                    <div id="neru_title"><h1 style="font-family: nunito;">NERU</h1></div>
+                </div>
+                <div class="content_form">
+                    <form id="frmLogin" method="post" action="#">      
+
+                        <div class="imgform_reg">
+                            <h2>INICIA SESION</h2>
+                        </div>    
+                        <div id="divLoginErrorConexion" class="errorConexion">
+                            Para poder iniciar la aplicación se requiere contar con conexión a internet por favor verifique que tenga acceso y que existan usuario de tipo vigilancia dentro del cluster
+                            <input  id="btnReintentarLogin" type="button" value="Reintentar"/>
+                        </div>    
+
+                        <div id="divErrorLogin" class="errorLogin"></div>
+                        <label>
+                            Usuario
+                        </label>    
+                        <div class="form_input">
+                            <input required type="text" value="" name="inUsuario" id="inUsuario" placeholder="USUARIO" />
+                        </div>
+                        <div class="form_input">
+                            <label>
+                                Contraseña
+                            </label>    
+
+                            <input required type="password" value="" name="inPassword" id="inPassword" placeholder="CONTRASEÑA" />
+                        </div>
+                        <div class="content_form_submit">
+                            <input disabled id="btnEnviarLogin" type="button" value="INGRESAR"/>
+                        </div>    
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../js/index.js"></script>
+    </body>
+</html>

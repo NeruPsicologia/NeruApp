@@ -7,7 +7,14 @@
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
     </author>
-    <content src="index.html" />
+    <content src="presentacion.html" />
+    <access allows-arbitrary-loads-in-media="true" allows-arbitrary-loads-in-web-content="true" allows-local-networking="true" origin="*" />
+    <preference name="SplashScreen" value="none" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="AndroidLaunchMode" value="singleTask" />
+    <preference name="SplashScreen" value="none" />
+    <preference name="FadeSplashScreen" value="false" />
+    <preference name="android-targetSdkVersion" value="28" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -17,7 +24,18 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <platform name="android">
+    <splash src="res/screen/android/screen-hdpi-landscape.png" density="land-hdpi"/>
+    <splash src="res/screen/android/screen-ldpi-landscape.png" density="land-ldpi"/>
+    <splash src="res/screen/android/screen-mdpi-landscape.png" density="land-mdpi"/>
+    <splash src="res/screen/android/screen-xhdpi-landscape.png" density="land-xhdpi"/>
+
+    <splash src="res/screen/android/screen-hdpi-portrait.png" density="port-hdpi"/>
+    <splash src="res/screen/android/screen-ldpi-portrait.png" density="port-ldpi"/>
+    <splash src="res/screen/android/screen-mdpi-portrait.png" density="port-mdpi"/>
+    <splash src="res/screen/android/screen-xhdpi-portrait.png" density="port-xhdpi"/>
         <allow-intent href="market:*" />
+        
+        
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />

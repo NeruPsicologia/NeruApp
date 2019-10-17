@@ -1,0 +1,13 @@
+#page-login{
+    background: #2d2e43 !important;
+    color:white;    
+}
+#div_neru{
+    background: red !important;
+}
+#neru_title{
+    color: white;
+}
+#divErrorLogin{
+    display: none;
+}

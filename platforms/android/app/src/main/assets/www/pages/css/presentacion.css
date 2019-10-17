@@ -1,0 +1,57 @@
+.presentacion{
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center;
+}
+
+#logo-presentacion{
+    
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45%;
+}
+
+#fondo-presentacion{
+    position:fixed;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    
+}
+
+input[type=date] {
+  text-align: right;
+}
+
+input.fechanac[type="date"]:before {
+  color: lightgrey;
+  content: attr(placeholder) !important;
+  margin-right: 0.5em;
+}
+
+
+input.fechanac[type="date"]:before {
+  color: lightgrey;
+  content: attr(placeholder) !important;
+  margin-right: 0.5em;
+}
+.texto-inicial-pantalla{
+    color: darkgray;
+    font-size: 0.8em;
+    margin: 30px;
+    text-align: center;
+}
+.perfilPagelogo{
+    text-align: center
+}
+.perfilPagelogo img{
+    width: 50%;
+}
+.divButtonPerfil{
+    width: 50%;
+    float: left;
+    text-align: center
+}

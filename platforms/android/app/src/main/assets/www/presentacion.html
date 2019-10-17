@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--    <meta http-equiv="Content-Security-Policy" content="default-src *">-->
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Security-Policy" content="child-src * gap://ready; default-src 'self' gap://ready file://* *; connect-src * blob: data:; style-src * 'unsafe-inline'; script-src * 'unsafe-eval' 'unsafe-inline'; img-src data: *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!-- <link rel="stylesheet" type="text/css" href="condomino/css/fonts.css" /> -->
+        <link rel="stylesheet" type="text/css" href="css/presentacion.css" />
+        <link rel="stylesheet" type="text/css" href="css/inicio.css" />
+        <link rel="stylesheet" type="text/css" href="css/login.css" />
+
+        <link rel="stylesheet" type="text/css" href="deps/jquerymobile/jquery.mobile-1.4.5.css">
+        <!--<script src="deps/jquery-2.2.4.min.js"></script> -->
+        <script src="deps/jquery-2.1.1.js"></script>
+        <script src="deps/jquerymobile/jquery.mobile-1.4.5.js"></script>
+        <script src="deps/validate/jquery.validate.js"></script>
+        <script src="deps/validate/localization/messages_es.js"></script>
+        <script src="deps/notify.js"></script>
+        <script src="deps/pulltorefresh.js"></script>
+        <script src="deps/jquery.tmpl.js"></script>
+        <script src="deps/x2js.js"></script>
+        <script src="deps/dobPicker.js"></script>
+        <script src="deps/currency.min.js"></script>
+        <script src="deps/jquery.maskMoney.min.js"></script>
+
+        <script src="deps/jqm-windows.mdialog.js"></script>
+        <script src="deps/js_md5.pack.js"></script>
+
+        <!-- cadenas -->
+        <script src="js/TextosGenerales.js"></script>
+
+        <title></title>
+    </head>
+    <body>
+        <div data-role="page" id="page-presentacion" class="presentacion">
+            <img id="logo-presentacion" src="img/neru/logo.png">
+            <button class="btn btn-entrar" id="btnEntrar">Entrar</button>
+        </div>
+        <script>
+            $("#btnEntrar").click( function(){
+                $.mobile.changePage('pages/page-login.html', {});
+            }); 
+        </script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js" charset="UTF-8"></script>
+    </body>
+</html>
